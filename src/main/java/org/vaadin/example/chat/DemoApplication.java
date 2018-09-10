@@ -7,6 +7,10 @@ import org.springframework.context.annotation.Bean;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.UnicastProcessor;
 
+/** This is the main Spring Boot application.
+ *  Vaadin views are automatically bound using the <code>@Route</code> annotation.
+ * @see org.vaadin.example.chat.ui.ChatView
+ * */
 @SpringBootApplication
 public class DemoApplication {
 
