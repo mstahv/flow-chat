@@ -1,0 +1,21 @@
+/* Some extra styling for header. */
+h1 {
+    font-size: var(--lumo-font-size-xxl);
+    color: var(--lumo-primary-text-color);
+    background-color: var(--lumo-shade-10pct);
+    border-radius: var(--lumo-border-radius);
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin: 10px 0;
+}
+
+/* We want the chat view to scroll vertically instead. */
+.message-layout {
+   overflow-y: scroll;
+}
+
+
+/* Make layout bit more compact. */
+.message-layout label {
+    margin: 0;
+}
