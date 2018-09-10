@@ -2,6 +2,7 @@ package org.vaadin.example.chat.backend;
 
 import java.time.LocalDateTime;
 
+/** Simple bean representing a single chat message. */
 public class ChatMessage {
 
     private LocalDateTime time;
@@ -14,7 +15,9 @@ public class ChatMessage {
         this.time = LocalDateTime.now();
     }
 
-    public String getFrom() { return from; }
+    public String getFrom() {
+        return from;
+    }
 
     public LocalDateTime getTime() {
         return time;
