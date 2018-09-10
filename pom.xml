@@ -47,6 +47,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Vaadin extension for creating keyboard shorcuts -->
+		<dependency>
+			<groupId>org.vaadin.marcus</groupId>
+			<artifactId>shortcut</artifactId>
+			<version>0.3.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -69,6 +77,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<!-- This repository is used for Vaadin Directory components -->
+		<repository>
+			<id>vaadin-addons</id>
+			<url>http://maven.vaadin.com/vaadin-addons</url>
+		</repository>
+	</repositories>
 
 
 </project>
