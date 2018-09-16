@@ -6,6 +6,7 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -92,8 +93,7 @@ public class ChatView extends VerticalLayout {
         public void add(ChatMessage msg) {
             getUI().ifPresent(ui -> {
                 ui.access(()-> {
-                    add(new Label(msg.getTime().format(DateTimeFormatter.ISO_LOCAL_TIME) + " - " + msg.getFrom() + ": " + msg.getMessage()));
-
+                    add(new Paragraph(msg.getTime().format(DateTimeFormatter.ISO_LOCAL_TIME) + " - " + msg.getFrom() + ": " + msg.getMessage()));
                 });
             });
         }
