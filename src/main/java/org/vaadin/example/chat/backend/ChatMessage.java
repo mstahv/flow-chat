@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 /** Simple bean representing a single chat message. */
 public class ChatMessage {
 
-    private LocalDateTime time;
-    private String from;
-    private String message;
+    private final LocalDateTime time;
+    private final String from;
+    private final String message;
 
     public ChatMessage(String from, String message) {
         this.from = from;
